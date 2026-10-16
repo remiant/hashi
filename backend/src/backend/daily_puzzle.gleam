@@ -34,25 +34,25 @@ pub fn default_options(for today: Date) -> hashi.Options {
   // inch towards the weekend.
   case calendar_extra.day_of_the_week(today) {
     Monday ->
-      hashi.new(width: 6, height: 6, islands: 15)
+      hashi.new(width: 15, height: 15, islands: 100)
       |> hashi.with_double_bridge_ratio(0.4)
     Tuesday ->
-      hashi.new(width: 7, height: 7, islands: 15)
+      hashi.new(width: 15, height: 15, islands: 100)
       |> hashi.with_double_bridge_ratio(0.4)
     Wednesday ->
-      hashi.new(width: 7, height: 7, islands: 20)
+      hashi.new(width: 15, height: 15, islands: 100)
       |> hashi.with_double_bridge_ratio(0.4)
     Thursday ->
-      hashi.new(width: 8, height: 8, islands: 22)
+      hashi.new(width: 15, height: 15, islands: 100)
       |> hashi.with_double_bridge_ratio(0.3)
     Friday ->
-      hashi.new(width: 9, height: 9, islands: 25)
+      hashi.new(width: 15, height: 15, islands: 100)
       |> hashi.with_double_bridge_ratio(0.3)
     Saturday ->
-      hashi.new(width: 10, height: 10, islands: 30)
+      hashi.new(width: 15, height: 15, islands: 100)
       |> hashi.with_double_bridge_ratio(0.5)
     Sunday ->
-      hashi.new(width: 9, height: 9, islands: 26)
+      hashi.new(width: 15, height: 15, islands: 100)
       |> hashi.with_double_bridge_ratio(0.5)
   }
 }
